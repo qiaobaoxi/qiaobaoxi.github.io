@@ -1,5 +1,5 @@
 
-const express = require('express')
+#const express = require('express')
 //抓取网页
 const superagent  = require('superagent')
 //分析网页抓取节点如jq
