@@ -13,7 +13,7 @@ app.get('/', function (req, res, next) {
 
   // 用 superagent 去抓取 https://cnodejs.org/ 的内容
   
-  superagent.get('https://cnodejs.org/')
+    superagent.get('https://cnodejs.org/')
   
     .end(function (err, sres) {
     
@@ -51,9 +51,9 @@ app.get('/', function (req, res, next) {
       res.send(items);
       
     });
-});
-app.listen(3000,function(req,res){
+   });
+   app.listen(3000,function(req,res){
 
-	 console.log('app is running at port 3000');
+	  console.log('app is running at port 3000');
 	 
-})
+   })
