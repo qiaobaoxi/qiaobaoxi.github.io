@@ -51,12 +51,12 @@
       res.send(items);
       
     });
-   });
-   app.listen(3000,function(req,res){
+    });
+    app.listen(3000,function(req,res){
 
 	  console.log('app is running at port 3000');
 	 
-   })
+    })
    
   #  解决并发
   
