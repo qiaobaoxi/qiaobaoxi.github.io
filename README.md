@@ -1,15 +1,15 @@
 # 抓取网站
-const express = require('express')
+    const express = require('express')
 
-//抓取网页
-const superagent  = require('superagent')
+    //抓取网页
+    const superagent  = require('superagent')
 
-//分析网页抓取节点如jq
-const cheerio = require('cheerio')
+    //分析网页抓取节点如jq
+    const cheerio = require('cheerio')
 
-const app = express()
+    const app = express()
 
-app.get('/', function (req, res, next) {
+    app.get('/', function (req, res, next) {
 
   // 用 superagent 去抓取 https://cnodejs.org/ 的内容
   
@@ -60,24 +60,24 @@ app.get('/', function (req, res, next) {
    
   #  解决并发
   
-  //  并发加载
+    //  并发加载
   
-  var eventproxy = require('eventproxy');
+    var eventproxy = require('eventproxy');
  
-  var superagent = require('superagent');
+    var superagent = require('superagent');
  
-  var cheerio = require('cheerio');
+    var cheerio = require('cheerio');
  
-  // url 模块是 Node.js 标准库里面的
-  // http://nodejs.org/api/url.html
+    // url 模块是 Node.js 标准库里面的
+    // http://nodejs.org/api/url.html
 
-  var url = require('url');
+    var url = require('url');
 
-  var cnodeUrl = 'https://cnodejs.org/';
+    var cnodeUrl = 'https://cnodejs.org/';
 
-  superagent.get(cnodeUrl)
+    superagent.get(cnodeUrl)
   
-  .end(function (err, res) {
+    .end(function (err, res) {
   
     if (err) {
     
@@ -107,7 +107,7 @@ app.get('/', function (req, res, next) {
       
       topicUrls.push(href);
       
-    });
+     });
 
     console.log(topicUrls);
     
