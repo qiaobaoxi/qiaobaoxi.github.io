@@ -57,8 +57,11 @@ app.get('/', function (req, res, next) {
 	  console.log('app is running at port 3000');
 	 
    })
+   
   #  解决并发
+  
   //  并发加载
+  
   var eventproxy = require('eventproxy');
  
   var superagent = require('superagent');
